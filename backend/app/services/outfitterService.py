@@ -23,3 +23,9 @@ def create_inventory(data, db):
     inventory = inventoryDAO.create(data, db)
 
     return inventory
+
+def read_inventory(db, filters):
+    
+    inventoryList = inventoryDAO.get(db, filters)
+
+    return inventoryList
